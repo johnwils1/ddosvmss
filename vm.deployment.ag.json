@@ -28,8 +28,8 @@
                 "description": "your resources will be created in this location"
             }
         },
-        "omsSku": {
-            "defaultValue": "PerNode",
+        "LogAnalyticsSku": {
+            "defaultValue": "Free",
             "allowedValues": [
                 "Free",
                 "Standalone",
@@ -37,7 +37,7 @@
             ],
             "type": "String",
             "metadata": {
-                "description": "this will be you SKU for OMS"
+                "description": "this will be you SKU for Log Analytics"
             }
         },
         "vNetName": {
@@ -189,7 +189,7 @@
                         "value": "[variables('omsSolutions')]"
                     },
                     "sku": {
-                        "value": "[parameters('omsSku')]"
+                        "value": "[parameters('LogAnalyticsSku')]"
                     },
                     "location": {
                         "value": "[parameters('location')]"
